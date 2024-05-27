@@ -43,27 +43,27 @@
       <form id="connect" action="" method="post" enctype="multipart/form-data"{% if debug %} novalidate{% end %}>
         <div class="row">
           <div class="col">
-            <label for="Hostname">Hostname</label>
+            <label for="Hostname">Hostname / 主机</label>
             <input class="form-control" type="text" id="hostname" name="hostname" value="" required>
           </div>
           <div class="col">
-            <label for="Port">Port</label>
+            <label for="Port">Port / 端口</label>
             <input class="form-control" type="number" id="port" name="port" placeholder="22" value="" min=1 max=65535>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <label for="Username">Username</label>
+            <label for="Username">Username / 用户名</label>
             <input class="form-control" type="text" id="username" name="username" value="" required>
           </div>
           <div class="col">
-            <label for="Password">Password</label>
+            <label for="Password">Password / 密码</label>
             <input class="form-control" type="password" id="password" name="password" value="">
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <label for="Username">Private Key</label>
+            <label for="Username">Private Key / 私钥</label>
             <input class="form-control" type="file" id="privatekey" name="privatekey" value="">
           </div>
           <div class="col">
@@ -73,7 +73,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <label for="totp">Totp (time-based one-time password)</label>
+            <label for="totp">Totp (time-based one-time password) / 基于时间的一次性密码</label>
             <input class="form-control" type="password" id="totp" name="totp" value="">
           </div>
           <div class="col">
@@ -85,6 +85,7 @@
         <button type="reset" class="btn btn-danger">Reset</button>
         <button type="button" class="btn btn-info" id="sshlinkBtn">SSH Link</button>
         <div id="sshlink"></div>
+        <br>
         <div>Github: <a href="https://github.com/crazypeace/huashengdun-webssh">WebSSH</a></div>
         <!-- <div>自建教程: <a href="https://zelikk.blogspot.com/search/label/webssh">https://zelikk.blogspot.com/search/label/webssh</a></div> -->
       </form>
